@@ -7,6 +7,7 @@
 //
 
 #import "DPPViewController.h"
+#import <DPPRootObject.h>
 
 @interface DPPViewController ()
 

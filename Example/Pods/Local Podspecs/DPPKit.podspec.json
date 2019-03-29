@@ -1,0 +1,21 @@
+{
+  "name": "DPPKit",
+  "version": "0.1.0",
+  "summary": "A short description of DPPKit.",
+  "homepage": "https://github.com/DPP-iOSer/DPPKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "DPP-iOSer": "lh5@meitu.com"
+  },
+  "source": {
+    "git": "https://github.com/DPP-iOSer/DPPKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DPPKit/Classes/**/*"
+}

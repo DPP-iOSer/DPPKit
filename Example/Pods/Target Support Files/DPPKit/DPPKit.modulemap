@@ -1,0 +1,6 @@
+framework module DPPKit {
+  umbrella header "DPPKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

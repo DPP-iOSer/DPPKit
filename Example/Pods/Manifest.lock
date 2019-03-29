@@ -1,0 +1,16 @@
+PODS:
+  - DPPKit (0.1.0)
+
+DEPENDENCIES:
+  - DPPKit (from `../`)
+
+EXTERNAL SOURCES:
+  DPPKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DPPKit: faca120e989b1e920c67190fc378c5d9b4621b44
+
+PODFILE CHECKSUM: dbe1fffc8cadbea97fc85f54a7d4eb3fece67b47
+
+COCOAPODS: 1.6.1
