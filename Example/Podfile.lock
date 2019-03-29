@@ -1,15 +1,42 @@
 PODS:
-  - DPPKit (0.1.0)
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DPPKit (0.0.1):
+    - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
   - DPPKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   DPPKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DPPKit: faca120e989b1e920c67190fc378c5d9b4621b44
+  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  DPPKit: f8b845174cf53b0f562aaeb15d627c351064bc45
 
 PODFILE CHECKSUM: dbe1fffc8cadbea97fc85f54a7d4eb3fece67b47
 

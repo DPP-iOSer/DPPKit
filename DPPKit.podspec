@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DPPKit'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'DPP的代码库'
 
 # This description is used to generate tags and improve search results.
@@ -24,8 +24,11 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'DPPKit/Classes/**/*'
+  
+  s.source_files = 'DPPKit/Classes/*.{h,m}', 'DPPKit/Classes/3rdLibraries/*.{h}'
+  s.vendored_libraries = 'DPPKit/Classes/3rdLibraries/*.{a}'
+  s.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
+  s.libraries = 'iconv','sqlite3','stdc++','z'
   
   # s.resource_bundles = {
   #   'DPPKit' => ['DPPKit/Assets/*.png']
@@ -33,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.3'
 end

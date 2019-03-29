@@ -1,7 +1,7 @@
 {
   "name": "DPPKit",
-  "version": "0.1.0",
-  "summary": "A short description of DPPKit.",
+  "version": "0.0.1",
+  "summary": "DPP的代码库",
   "homepage": "https://github.com/DPP-iOSer/DPPKit",
   "license": {
     "type": "MIT",
@@ -12,10 +12,33 @@
   },
   "source": {
     "git": "https://github.com/DPP-iOSer/DPPKit.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DPPKit/Classes/**/*"
+  "source_files": [
+    "DPPKit/Classes/*.{h,m}",
+    "DPPKit/Classes/3rdLibraries/*.{h}"
+  ],
+  "vendored_libraries": "MyLibrary/Classes/3rdLibraries/*.{a}",
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CoreTelephony",
+    "Security",
+    "CoreLocation",
+    "JavaScriptCore"
+  ],
+  "libraries": [
+    "iconv",
+    "sqlite3",
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  }
 }
