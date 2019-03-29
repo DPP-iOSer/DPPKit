@@ -1,6 +1,6 @@
 {
   "name": "DPPKit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "DPP的代码库",
   "homepage": "https://github.com/DPP-iOSer/DPPKit",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/DPP-iOSer/DPPKit.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,7 +21,7 @@
     "DPPKit/Classes/*.{h,m}",
     "DPPKit/Classes/3rdLibraries/*.{h}"
   ],
-  "vendored_libraries": "MyLibrary/Classes/3rdLibraries/*.{a}",
+  "vendored_libraries": "DPPKit/Classes/3rdLibraries/*.{a}",
   "frameworks": [
     "SystemConfiguration",
     "CoreGraphics",
@@ -40,5 +40,11 @@
     "AFNetworking": [
       "~> 2.3"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "DPPSub",
+      "source_files": "DPPKit/Classes/DPPSub/*.{h,m}"
+    }
+  ]
 }

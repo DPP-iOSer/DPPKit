@@ -14,6 +14,7 @@
 #import "WechatAuthSDK.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
+#import "DPPChild.h"
 
 FOUNDATION_EXPORT double DPPKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DPPKitVersionString[];
