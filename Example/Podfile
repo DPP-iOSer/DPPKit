@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DPPKit_Example' do
+  pod 'DPPKit', :path => '../'
+
+  target 'DPPKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
